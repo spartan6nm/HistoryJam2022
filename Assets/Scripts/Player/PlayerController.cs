@@ -47,8 +47,34 @@ public class PlayerController : MonoBehaviour
     bool reached;
 
 
+
+    private static PlayerController _instance;
+
+    public static PlayerController Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = GameObject.FindObjectOfType<PlayerController>();
+            }
+
+            return _instance;
+        }
+    }
+
     private void Awake()
     {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+        DontDestroyOnLoad(this.gameObject);
+
         EventBroker.PlayerMove += NewLocationToMove;
     }
     // Start is called before the first frame update
