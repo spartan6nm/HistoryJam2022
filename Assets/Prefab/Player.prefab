@@ -78,12 +78,11 @@ MonoBehaviour:
   currentState: 0
   rigidBody: {fileID: 4779473885754973826}
   seeker: {fileID: 4779473885754973887}
-  aiPath: {fileID: 0}
   speed: 300
   nextWayPointDistance: 4
   direction: {x: 0, y: 0}
   perspectiveScale: 0.1
-  scaleRatio: 40
+  scaleRatio: 25
 --- !u!70 &4779473885754973827
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

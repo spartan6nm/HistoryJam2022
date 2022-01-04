@@ -15,8 +15,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Seeker seeker;
     [SerializeField]
-    private AIPath aiPath;
-    [SerializeField]
     private float speed;
     [SerializeField]
     private float nextWayPointDistance;
@@ -48,32 +46,12 @@ public class PlayerController : MonoBehaviour
 
 
 
-    private static PlayerController _instance;
 
-    public static PlayerController Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = GameObject.FindObjectOfType<PlayerController>();
-            }
 
-            return _instance;
-        }
-    }
+
 
     private void Awake()
     {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            _instance = this;
-        }
-        DontDestroyOnLoad(this.gameObject);
 
         EventBroker.PlayerMove += NewLocationToMove;
     }
@@ -214,6 +192,7 @@ public class PlayerController : MonoBehaviour
 
 
             direction = ((Vector2)path.vectorPath[currentWayPoint] - rigidBody.position).normalized;
+
             rigidBody.velocity = direction * speed * Time.fixedDeltaTime;
 
             float distance = Vector2.Distance(rigidBody.position, path.vectorPath[currentWayPoint]);
