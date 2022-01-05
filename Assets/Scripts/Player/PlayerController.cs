@@ -54,6 +54,14 @@ public class PlayerController : MonoBehaviour
     {
 
         EventBroker.PlayerMove += NewLocationToMove;
+        EventBroker.PlayerStop += StopMoving;
+
+    }
+
+    private void OnDisable()
+    {
+        EventBroker.PlayerMove -= NewLocationToMove;
+        EventBroker.PlayerStop += StopMoving;
     }
     // Start is called before the first frame update
     void Start()
@@ -80,14 +88,16 @@ public class PlayerController : MonoBehaviour
         AdjustScale();
     }
 
-    private void OnDisable()
-    {
-        EventBroker.PlayerMove -= NewLocationToMove;
-    }
 
-    public void NewLocationToMove(Vector3 point)
+
+    private void NewLocationToMove(Vector3 point)
     {
         targetPoint = point;
+    }
+
+    private void StopMoving()
+    {
+        GotoState(PlayerState.Idle);
     }
 
 

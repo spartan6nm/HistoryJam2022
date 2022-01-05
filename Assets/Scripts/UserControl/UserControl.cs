@@ -19,15 +19,13 @@ public class UserControl : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            EventBroker.CallPlayerMove(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-            /*
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, moveSelectionLayers);
 
-            if (hit.collider.gameObject.tag != "player")
+            if (hit.collider.gameObject.tag == "Walk")
             {
-                
+                EventBroker.CallPlayerMove(Camera.main.ScreenToWorldPoint(Input.mousePosition));
             }
-            */
+            
             
         }
     }
