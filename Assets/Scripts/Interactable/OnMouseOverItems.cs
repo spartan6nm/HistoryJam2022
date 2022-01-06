@@ -6,7 +6,6 @@ public class OnMouseOverItems : MonoBehaviour
 {
     public string message;
 
-
     public void ShowTooltip()
     {
         

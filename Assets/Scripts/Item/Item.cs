@@ -11,7 +11,6 @@ public class Item : ScriptableObject
 
     public Sprite itemSprite;
 
-    public Vector3 LocationOnScene;
+    public bool showInInventory = true;
 
-    public string ParentLocation;
 }

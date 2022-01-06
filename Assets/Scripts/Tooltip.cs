@@ -28,7 +28,19 @@ public class Tooltip : MonoBehaviour
     {
         Vector3 screenPoint = Input.mousePosition;
         screenPoint.z = 20.0f; //distance of the plane from the camera
-        tooltip.transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
+        if (Input.mousePosition.x < Screen.width / 2)
+        {
+            screenPoint = new Vector3(Input.mousePosition.x - 20, Input.mousePosition.y);
+
+            tooltip.transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
+        }
+        else
+        {
+            screenPoint = new Vector3(Input.mousePosition.x + 20, Input.mousePosition.y);
+
+            tooltip.transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
+        }
+        
 
     }
 

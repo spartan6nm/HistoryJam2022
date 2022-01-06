@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 using System;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -66,6 +67,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ScaleCheck();
     }
 
     // Update is called once per frame
@@ -106,7 +108,7 @@ public class PlayerController : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.y = perspectiveScale * (scaleRatio - transform.position.y);
         scale.x = perspectiveScale * (scaleRatio - transform.position.y);
-        
+        /*
         if (scale.y < 3.5f)
         {
             scale.y = 3.5f;
@@ -117,12 +119,32 @@ public class PlayerController : MonoBehaviour
             scale.y = 4.5f;
             scale.x = 4.5f;
         }
-        
+        */
         
         transform.localScale = scale;
 
     }
 
+
+
+    public void ScaleCheck()
+    {
+        switch (SceneManager.GetActiveScene().buildIndex)
+        {
+            case 0:
+                scaleRatio = 2;
+                break;
+            case 1:
+                scaleRatio = 3;
+                break;
+            case 2:
+                scaleRatio = 3;
+                break;
+            case 3:
+                scaleRatio = 10;
+                break;
+        }
+    }
 
     private void UpdatePath()
     {

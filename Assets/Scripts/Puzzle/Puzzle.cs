@@ -24,7 +24,7 @@ public class Puzzle : MonoBehaviour {
     void Start()
     {
         CreatePuzzle();
-        EventBroker.CallPlaySound("puzzle");
+        //EventBroker.CallPlaySound("puzzle");
     }
 
     void Update()

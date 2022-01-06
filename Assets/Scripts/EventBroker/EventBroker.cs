@@ -18,6 +18,8 @@ public class EventBroker
 
     public static event Action<string> StopSound;
 
+    public static event Action ItemChanged;
+
 
 
 
@@ -68,4 +70,14 @@ public class EventBroker
             StopSound(name);
         }
     }
+
+    public static void CallItemChanged()
+    {
+        if (ItemChanged != null)
+        {
+            ItemChanged();
+        }
+    }
+
+
 }

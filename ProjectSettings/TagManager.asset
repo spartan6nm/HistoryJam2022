@@ -4,14 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Agent
-  - Camp
-  - nuteral
-  - Buildable
-  - Gate
-  - Castle
-  - Hero
-  - PlayerAgent
+  - Walk
   layers:
   - Default
   - TransparentFX
