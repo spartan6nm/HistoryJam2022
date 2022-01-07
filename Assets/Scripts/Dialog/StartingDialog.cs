@@ -11,7 +11,7 @@ public class StartingDialog : Dialog
 
     public override void NextSentence()
     {
-        EventBroker.CallPlaySound("click");
+        EventBroker.CallPlaySound("dialogue_advance");
         if (indexSentences < dialogs[indexDialogs].sentences.Length - 1)
         {
             StopCoroutine(Type());
