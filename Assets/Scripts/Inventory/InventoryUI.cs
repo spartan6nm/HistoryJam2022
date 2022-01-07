@@ -28,6 +28,14 @@ public class InventoryUI : MonoBehaviour {
 	{
 		if (Input.GetKeyDown(KeyCode.Tab))
 		{
+            if (inventoryUI.activeSelf == true)
+            {
+				EventBroker.CallPlaySound("inventoryClose");
+            }
+			else
+            {
+				EventBroker.CallPlaySound("inventoryOpen");
+			}
 			inventoryUI.SetActive(!inventoryUI.activeSelf);
 			UpdateUI();
 		}

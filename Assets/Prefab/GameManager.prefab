@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6326537255816677426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6326537255816677425}
+  - component: {fileID: 6326537255816677424}
+  - component: {fileID: 6326537255816677431}
+  - component: {fileID: 6326537255816677429}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6326537255816677425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6326537255816677426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.32, y: -3.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6326537255816677424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6326537255816677426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbbe7197ac6698d479d7a7fa52dea1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerQuests: []
+--- !u!114 &6326537255816677431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6326537255816677426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42adc599ef4ab7e4abd879352b7f12cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: puzzle
+    Clip: {fileID: 8300000, guid: 068c22be3b7b5db40a75de31dafd0da5, type: 3}
+    volume: 0.6
+    pitch: 1
+    SpatialBlend: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: khan
+    Clip: {fileID: 8300000, guid: 87994f251757e1c4eb4a70eebd8154ac, type: 3}
+    volume: 0.6
+    pitch: 1
+    SpatialBlend: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: setar
+    Clip: {fileID: 8300000, guid: f563698a67a0ed54ba1a36413cf58191, type: 3}
+    volume: 0.6
+    pitch: 1
+    SpatialBlend: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: tar
+    Clip: {fileID: 8300000, guid: 44ed8599dfe094c458b9268eb4d7e509, type: 3}
+    volume: 0.6
+    pitch: 1
+    SpatialBlend: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: treeSound
+    Clip: {fileID: 8300000, guid: 3f86952586d96c34eb3ba6b63942a904, type: 3}
+    volume: 0.4
+    pitch: 1
+    SpatialBlend: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: waterSound
+    Clip: {fileID: 8300000, guid: 7713ceed16778604590048232937536f, type: 3}
+    volume: 0.5
+    pitch: 1
+    SpatialBlend: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: inventoryOpen
+    Clip: {fileID: 8300000, guid: f1aa79d3afd57cd41900bd3839a8d9cd, type: 3}
+    volume: 1
+    pitch: 1
+    SpatialBlend: 0
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: inventoryClose
+    Clip: {fileID: 8300000, guid: a0e198deebfb57d40a569e9689c3695b, type: 3}
+    volume: 1
+    pitch: 1
+    SpatialBlend: 0
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: footStep
+    Clip: {fileID: 8300000, guid: 5ce8c56315f7fd14ea30784b2c2c3c2e, type: 3}
+    volume: 1
+    pitch: 1
+    SpatialBlend: 0
+    loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+--- !u!114 &6326537255816677429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6326537255816677426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed3dead21b27a6b4da63ac2836dea63b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  space: 10
+  items: []

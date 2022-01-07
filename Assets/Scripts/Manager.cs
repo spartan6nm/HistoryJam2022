@@ -39,17 +39,18 @@ public class Manager : MonoBehaviour
     }
     private void Start()
     {
-        Invoke("MusicCheck", 0.2f);
+        Invoke("MusicCheck", 0f);
+        EventBroker.CallPlaySound("waterSound");
     }
     public void Left()
     {
         EventBroker.CallPlayerStop();
         int x = SceneManager.GetActiveScene().buildIndex;
-        if (x != 0)
+        if (x > 2)
         {
             SceneManager.LoadScene(x - 1);
         }
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
 
         }
@@ -67,12 +68,11 @@ public class Manager : MonoBehaviour
     {
         EventBroker.CallPlayerStop();
         int x = SceneManager.GetActiveScene().buildIndex;
-        if (x != 3)
+        if (x < 5)
         {
             SceneManager.LoadScene(x + 1);
         }
-
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 3)
         {
 
         }

@@ -5,5 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class DialogBody
 {
+    [TextArea()]
     public string[] sentences;
 }

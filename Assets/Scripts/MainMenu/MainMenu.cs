@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private void Start()
+    {
+        EventBroker.CallPlaySound("theme");
+    }
     public void Play()
     {
-        if (PlayerPrefs.HasKey("playedBefore"))
+        EventBroker.CallPlaySound("click");
+        if (PlayerPrefs.HasKey("Played"))
         {
             //TODO go to the first game scene
         }
@@ -14,5 +20,13 @@ public class MainMenu : MonoBehaviour
         {
             //TODO go for starting story
         }
+
+        SceneManager.LoadScene("StartingScene");
+    
+    }
+
+    public void Quit()
+    {
+        EventBroker.CallPlaySound("close");
     }
 }

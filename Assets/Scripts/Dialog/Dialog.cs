@@ -8,53 +8,46 @@ public class Dialog : MonoBehaviour
     public DialogBody[] dialogs;
 
     [SerializeField]
-    private Text DialogText;
+    private protected Text DialogText;
+    [SerializeField]
+    private protected Button continueButton;
 
 
 
     [SerializeField]
-    private float typingSpeed;
+    private protected float typingSpeed;
 
-    private int indexSentences;
-    private int indexDialogs;
+    private protected static int indexSentences;
+    private protected static int indexDialogs;
 
-    private void Start()
+
+
+    public virtual IEnumerator Type()
+    {
+        for (int i = 0; i < dialogs[indexDialogs].sentences[indexSentences].ToCharArray().Length; i++)
+        {
+            if (i <= 1)
+            {
+                continueButton.interactable = false;
+            }
+            else if (i >= dialogs[indexDialogs].sentences[indexSentences].ToCharArray().Length - 1)
+            {
+                continueButton.interactable = true;
+            }
+             DialogText.text += dialogs[indexDialogs].sentences[indexSentences].ToCharArray()[i];
+            yield return new WaitForSeconds(typingSpeed);
+
+
+        }
+    }
+
+    public virtual void NextSentence()
     {
         
     }
 
-    IEnumerator Type()
+    public virtual void NextDialog()
     {
-        foreach (var letter in dialogs[indexDialogs].sentences[indexSentences].ToCharArray())
-        {
-            DialogText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
-        }
-    }
-
-    public void NextSentence()
-    {
-        if (indexSentences < dialogs[indexDialogs].sentences.Length)
-        {
-            indexSentences++;
-            DialogText.text = "";
-            StartCoroutine(Type());
-        }
-        else
-        {
-            //TODo this dialog is compelte
-        }
-    }
-
-    public void NextDialog()
-    {
-        if (indexSentences >= dialogs[indexDialogs].sentences.Length)
-        {
-            indexSentences = 0;
-            indexDialogs++;
-            DialogText.text = "";
-            StartCoroutine(Type());
-        }
         
     }
          

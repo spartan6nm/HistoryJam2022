@@ -131,16 +131,16 @@ public class PlayerController : MonoBehaviour
     {
         switch (SceneManager.GetActiveScene().buildIndex)
         {
-            case 0:
-                scaleRatio = 2;
-                break;
-            case 1:
-                scaleRatio = 3;
-                break;
             case 2:
                 scaleRatio = 3;
                 break;
             case 3:
+                scaleRatio = 12;
+                break;
+            case 4:
+                scaleRatio = 4;
+                break;
+            case 5:
                 scaleRatio = 10;
                 break;
         }
@@ -214,6 +214,7 @@ public class PlayerController : MonoBehaviour
     {
         firstUpdatePathThisRound = true;
         InvokeRepeating("UpdatePath", 0.0f, 0.3f);
+        EventBroker.CallPlaySound("footStep");
     }
     private void ActionUpdate_Moving()
     {
@@ -238,7 +239,7 @@ public class PlayerController : MonoBehaviour
             {
                 reached = true;
                 CancelInvoke("UpdatePath");
-                Invoke("goIdle", 0.5f);
+                Invoke("goIdle", 0.2f);
                 return;
             }
             else
@@ -252,6 +253,7 @@ public class PlayerController : MonoBehaviour
     }
     private void ActionEnd_Moving()
     {
+        EventBroker.CallStopSound("footStep");
         firstUpdatePathThisRound = false;
         CancelInvoke("UpdatePath");
         rigidBody.velocity = Vector2.zero;
