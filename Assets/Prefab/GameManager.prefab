@@ -124,7 +124,7 @@ MonoBehaviour:
     playOnAwake: 0
     source: {fileID: 0}
   - name: footStep
-    Clip: {fileID: 8300000, guid: 5ce8c56315f7fd14ea30784b2c2c3c2e, type: 3}
+    Clip: {fileID: 8300000, guid: c693f1767ce3c9f409edb77b47a40973, type: 3}
     volume: 1
     pitch: 1
     SpatialBlend: 0

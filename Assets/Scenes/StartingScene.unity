@@ -505,6 +505,14 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
+  - name: dialogue_advance
+    Clip: {fileID: 8300000, guid: b4bce7f7627ea8e469e07158abf8a35d, type: 3}
+    volume: 1
+    pitch: 1
+    SpatialBlend: 0
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
 --- !u!4 &721772299
 Transform:
   m_ObjectHideFlags: 0
