@@ -10,9 +10,6 @@ public class EventBroker
 
     public static event Action PlayerStop;
 
-    public static event Action<string> SetupTooltip;
-
-    public static event Action HideTooltip;
 
     public static event Action<string> PlaySound;
 
@@ -39,21 +36,6 @@ public class EventBroker
         }
     }
 
-    public static void CallSetupTooltip(string message)
-    {
-        if (SetupTooltip != null)
-        {
-            SetupTooltip(message);
-        }
-    }
-
-    public static void CallHideTooltip()
-    {
-        if (HideTooltip != null)
-        {
-            HideTooltip();
-        }
-    }
 
     public static void CallPlaySound(string name)
     {

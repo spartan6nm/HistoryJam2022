@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartingDialog : Dialog
+public class PuzzleAccidentDialog : Dialog
 {
+    public GameObject masterImahe;
+    public GameObject khan1Image;
 
-    public GameObject ceramicSprite;
 
+    public GameObject khan2Image;
     private void Start()
     {
-        //Debug.LogError(PlayerPrefs.GetInt("Played"));
         StartCoroutine(Type());
     }
+
     public override IEnumerator Type()
     {
         for (int i = 0; i < dialogs[indexDialogs].sentences[indexSentences].ToCharArray().Length; i++)
@@ -40,6 +42,21 @@ public class StartingDialog : Dialog
             indexSentences++;
             DialogText.text = "";
             StartCoroutine(Type());
+
+            if (indexDialogs == 1 && indexSentences == 3)
+            {
+                masterImahe.SetActive(false);
+            }
+            else
+                if (indexDialogs == 1 && indexSentences == 4)
+            {
+                khan1Image.SetActive(true);
+            }
+            else
+                if (indexDialogs == 1 && indexSentences == 13)
+            {
+                khan1Image.SetActive(false);
+            }
         }
         else
         {
@@ -47,12 +64,32 @@ public class StartingDialog : Dialog
             {
                 indexDialogs = 0;
                 indexSentences = 0;
-                SceneManager.LoadScene(2);
+
+                Manager.geometry = false;
+                Manager.khanTalking = false;
+                Manager.plants = false;
+                Manager.puzzle = false;
+                Manager.accident = false;
+                Manager.water = false;
+                Destroy(Manager.Instance);
+                Destroy(FindObjectOfType<Manager>().gameObject);
+                SceneManager.LoadScene(0);
             }
             else
             {
+                if (indexDialogs == 0)
+                {
+                    Manager.Instance.MusicStop();
+                    SceneManager.LoadScene("puzzle");
+                    //return;
+                }
 
                 NextDialog();
+                if (indexDialogs == 2 && indexSentences == 0)
+                {
+                    khan2Image.SetActive(true);
+                    masterImahe.SetActive(true);
+                }
             }
         }
     }
@@ -62,10 +99,6 @@ public class StartingDialog : Dialog
         StopCoroutine(Type());
         indexSentences = 0;
         indexDialogs++;
-        if (indexDialogs == 2)
-        {
-            Destroy(ceramicSprite);
-        }
         DialogText.text = "";
         StartCoroutine(Type());
     }

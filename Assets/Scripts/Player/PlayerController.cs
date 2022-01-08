@@ -53,7 +53,6 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-
         EventBroker.PlayerMove += NewLocationToMove;
         EventBroker.PlayerStop += StopMoving;
 
@@ -239,7 +238,7 @@ public class PlayerController : MonoBehaviour
             {
                 reached = true;
                 CancelInvoke("UpdatePath");
-                Invoke("goIdle", 0.2f);
+                GotoState(PlayerState.Idle);
                 return;
             }
             else
@@ -253,10 +252,11 @@ public class PlayerController : MonoBehaviour
     }
     private void ActionEnd_Moving()
     {
+        rigidBody.velocity = Vector2.zero;
         EventBroker.CallStopSound("footStep");
         firstUpdatePathThisRound = false;
         CancelInvoke("UpdatePath");
-        rigidBody.velocity = Vector2.zero;
+        
     }
 
     private void goIdle()

@@ -12,14 +12,6 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
         EventBroker.CallPlaySound("click");
-        if (PlayerPrefs.HasKey("Played"))
-        {
-            //TODO go to the first game scene
-        }
-        else
-        {
-            //TODO go for starting story
-        }
 
         SceneManager.LoadScene("StartingScene");
     
@@ -28,5 +20,6 @@ public class MainMenu : MonoBehaviour
     public void Quit()
     {
         EventBroker.CallPlaySound("close");
+        Application.Quit();
     }
 }

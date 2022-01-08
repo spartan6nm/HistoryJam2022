@@ -233,47 +233,91 @@ MonoBehaviour:
   m_GameObject: {fileID: 188742078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dc7af4aa3766a74183d39a454d86b34, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ae24206e0ab41448a85ec06213208d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogs:
   - sentences:
-    - "Master Tahir Memar - \u201C...The garden is divided into four sections, they
-      are known as Chahar Bagh, four gardens, that represent the four gardens of
-      paradise mentioned in the Quran.\u201D"
-    - "Master Tahir Memar  - \u201COther interpretations are that the four sections
-      represent the four elements of fire, air, water, and nature, and their creator,
-      God.\u201D"
-    - A Master of architecture sits in front of his student, talking effusively about
-      the virtues of the Persian Garden.
-    - "Master Tahir Memar - \u201CHowever most interpretations agree that the gardens
-      and their geometry embody the union of the material world and the\u2026\u201D"
-    - " A knocking on the door interrupts the Master\u2019s lesson."
-    - "Courier - \u201CA message sir, for Master Tahir\u201D"
+    - "\u20268 months later\u2026"
+    - "Master Tahir Memar - \u201CStudent, I need you to help with the tile design,
+      someone has messed it up and the tiles need to be placed in the right order
+      again, can you do that?\u201D"
+    - "Master Tahir Memar - \u201CStudent, I need you to help with the tile design,
+      someone has messed it up and the tiles need to be placed in the right order
+      again, can you do that?\u201D"
   - sentences:
-    - The Master reads the missive before looking up.
-    - "Master Tahir Memar - \u201CThis is good news! And good timing for our lesson.
-      Bahram Khan listened to my advice and has approved the construction of a garden
-      for the anniversary of the late General\u2019s death. His passing was a horrible
-      loss for the country and the Khan, they were very close friends.\u201D"
-    - "Student  - \u201CClose friends? The general must have been important if the
-      Khan is building gardens in his honour.\u201D"
-    - "Master Tahir Memar - \u201CYes he was very important, both to the country
-      and the Khan himself.\u201D"
-    - "Master Tahir Memar - \u201CThese gardens will be a test of both of our skills
-      as architects. I expect you to pour your heart and soul into this Garden as
-      the Khan will expect nothing less.\u201D"
-    - "Master Tahir Memar - \u201CThis will be my final masterpiece before I leave
-      this world.\u201D"
+    - "Student - \u201CThe tiles match up perfectly!\u201D"
+    - Something shifts and a sack of tiles falls from the roof
+    - "Student - \u201CMaster, Watch out!\u201D"
+    - The master is hit on the head by the tiles and is knocked out.
+    - "Later\u2026 The master is now unconscious and unable to complete the designs.
+      The student and the khan are in the small office where the student and master
+      have organised all of this."
+    - "Bahram Khan - \u201CI was a fool to listen to the old man\u2026 I shouldn\u2019t
+      have built these gardens in the first place, and now an old friend is hurt
+      on my orders.\u201D"
+    - "Bahram Khan - \u201Cwe must scrap the plans, or wait until the master wakes,
+      if he ever does\u2026\u201D"
+    - The master is resting peacefully, it could be mistaken for sleep if not for
+      the bandages wrapped around their head.
+    - "Student - \u201CBut that will mean it won't be ready for the anniversary my
+      Khan! \u201D"
+    - "Bahram Khan - \u201CAnd you think you can match the master's level of skill?!\u201D"
+    - The Khan looks angry, and his eyes are wild. The man is disheveled, his formal
+      outfit crumpled and his hair a mess as if he has run his hands through it a
+      thousand times.
+    - "Bahram Khan - \u201CThis must be perfect, it needs to be perfect\u2026 for
+      him\u2026\u201D"
+    - "Student - \u201CI know the master's plans, I have studied them for months.
+      I even drew up many of them myself. I know I can do this Sir, for you\u2026
+      for your friend.\u201D"
+    - The Khan turns and leaves, leaving the student unsure of his direction.
+    - "Student - \u201CI guess I gotta keep going?\u201D"
+    - a month later, the student is harried and looks exhausted, but they are determined
+      and working hard even after taking command of the garden.
+    - a month later, the student is harried and looks exhausted, but they are determined
+      and working hard even after taking command of the garden.
   - sentences:
-    - "Master Tahir Memar - \u201CStudent, we need to collect a few things from the
-      building site, different tile samples for the design on the roof of the Kooshk."
-    - "Master Tahir Memar - \u201Cwe\u2019ll find them with the fountain workers,
-      the builders and the gardeners\""
+    - After the Student takes on the job there's lots to do, but eventually the team
+      completes each part of the garden on time.
+    - 'Despite all the hard work time passes quickly, and before anyone knows it
+      a year has passed since the generals death, and it is time for the opening
+      ceremony of the gardens.
+
+'
+    - All are in attendance, including everyone who helped create this beautiful
+      place. Although the master woke up only a few days ago he has managed to stand
+      for the event.
+    - The ceremony is only brief, but profound words and the setting sun over an
+      incredible landscape brought many tears to the eyes of those present. Sunset
+      falls and the attendees slowly leave with the blessing of the Khan.
+    - Both student and master remain however, looking around in marvel of what they
+      have created together.
+    - "Master Tahir Memar - \u201CI\u2019m incredibly proud of you, my student. You
+      have performed admirably in my absence. And indeed many of these designs are
+      your own. This work is as much yours as it is mine.\u201D"
+    - "Student - \u201CMaster, I don't know what to say!\u201D\r\n"
+    - "Master Tahir Memar - \u201CStudent, I never thought it would come to it so
+      soon, but you have proven to me that you are a capable builder in your own
+      right.\u201D"
+    - "Bahram Khan - \u201CMaster Memar is right you know.\u201D"
+    - The Khan approached the student and master as they looked over the walls of
+      the Garden
+    - He has a soft smile on his face; the stern, stoic leader that the Student had
+      been used to for months had somehow softened.
+    - "Master Tahir Memar - \u201CYou look well, my Khan. I take it the gardens helped
+      with your\u2026\u201D"
+    - The Master Tahir Memar pauses for a moment
+    - "Bahram Khan - \u201CI don\u2019t think I will ever recover, truly, but I think
+      knowing that he now rests in a place which he would have loved\u2026\u201D"
+    - The Khan pauses. His smile is wistful and his eyes speak of a great loss.
+    - "Bahram Khan \u201CHe meant the world to me\u2026\u201D"
   DialogText: {fileID: 1667291323}
   continueButton: {fileID: 726732672}
   typingSpeed: 0.06
-  ceramicSprite: {fileID: 1528424709}
+  masterImahe: {fileID: 758370645}
+  khan1Image: {fileID: 307716036}
+  khan2Image: {fileID: 1829662026}
 --- !u!1 &286201278
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,6 +435,81 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1 &307716036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 307716037}
+  - component: {fileID: 307716039}
+  - component: {fileID: 307716038}
+  m_Layer: 5
+  m_Name: Khan1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &307716037
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307716036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3386206757643801668}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -630, y: -290}
+  m_SizeDelta: {x: 222.65625, y: 642.1875}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &307716038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307716036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f480c8022c529674ba3446d92b068944, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &307716039
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307716036}
+  m_CullTransparentMesh: 1
 --- !u!1 &308917620
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,89 +580,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &721772297
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 721772299}
-  - component: {fileID: 721772298}
-  - component: {fileID: 721772300}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &721772298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721772297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42adc599ef4ab7e4abd879352b7f12cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: theme
-    Clip: {fileID: 8300000, guid: f563698a67a0ed54ba1a36413cf58191, type: 3}
-    volume: 0.6
-    pitch: 1
-    SpatialBlend: 0
-    loop: 1
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: click
-    Clip: {fileID: 8300000, guid: 4bb35bf93922c1140b2d2cf93748cd98, type: 3}
-    volume: 1
-    pitch: 1
-    SpatialBlend: 0
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
-  - name: dialogue_advance
-    Clip: {fileID: 8300000, guid: b4bce7f7627ea8e469e07158abf8a35d, type: 3}
-    volume: 1
-    pitch: 1
-    SpatialBlend: 0
-    loop: 0
-    playOnAwake: 0
-    source: {fileID: 0}
---- !u!4 &721772299
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721772297}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &721772300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721772297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba55f319980c04d4ebb90a2ade176cd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &726732670
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,8 +618,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 40}
-  m_SizeDelta: {x: 200, y: 55}
+  m_AnchoredPosition: {x: 0, y: 36}
+  m_SizeDelta: {x: 200, y: 66}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &726732672
 MonoBehaviour:
@@ -628,7 +666,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 188742083}
-        m_TargetAssemblyTypeName: StartingDialog, Assembly-CSharp
+        m_TargetAssemblyTypeName: PuzzleAccidentDialog, Assembly-CSharp
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -676,6 +714,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726732670}
+  m_CullTransparentMesh: 1
+--- !u!1 &758370645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 758370646}
+  - component: {fileID: 758370648}
+  - component: {fileID: 758370647}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &758370646
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758370645}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3386206757643801668}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -630, y: -290}
+  m_SizeDelta: {x: 222.65625, y: 642.1875}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &758370647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758370645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c52d1938cb757cc4796bda467e14f325, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &758370648
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758370645}
   m_CullTransparentMesh: 1
 --- !u!1 &852466415
 GameObject:
@@ -755,163 +868,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852466415}
-  m_CullTransparentMesh: 1
---- !u!1 &866615488
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 866615490}
-  - component: {fileID: 866615489}
-  m_Layer: 0
-  m_Name: Palace
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &866615489
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866615488}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 7d3097c84cf671945a566ceb50089dac, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 53.333332, y: 30}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &866615490
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866615488}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &989779009
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 989779010}
-  - component: {fileID: 989779012}
-  - component: {fileID: 989779011}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &989779010
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 989779009}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3386206757643801668}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -630, y: -290}
-  m_SizeDelta: {x: 222.65625, y: 642.1875}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &989779011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 989779009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c52d1938cb757cc4796bda467e14f325, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &989779012
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 989779009}
   m_CullTransparentMesh: 1
 --- !u!1 &1435088094
 GameObject:
@@ -1036,7 +992,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d8a840207898b4d44b431f867e2a8bce, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d3097c84cf671945a566ceb50089dac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1055,11 +1011,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1528424709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.23, y: 4.43, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1667291321
 GameObject:
@@ -1096,7 +1052,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: 1720, y: 250}
+  m_SizeDelta: {x: 1620, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667291323
 MonoBehaviour:
@@ -1140,6 +1096,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667291321}
   m_CullTransparentMesh: 1
+--- !u!1 &1829662026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1829662027}
+  - component: {fileID: 1829662029}
+  - component: {fileID: 1829662028}
+  m_Layer: 5
+  m_Name: Khan2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1829662027
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829662026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3386206757643801668}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -290}
+  m_SizeDelta: {x: 222.65625, y: 642.1875}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1829662028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829662026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f480c8022c529674ba3446d92b068944, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1829662029
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829662026}
+  m_CullTransparentMesh: 1
 --- !u!1 &1969579792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,7 +1205,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 630, y: -290}
+  m_AnchoredPosition: {x: 620, y: -290}
   m_SizeDelta: {x: 258.59375, y: 662.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1969579794
@@ -1247,7 +1278,7 @@ RectTransform:
   - {fileID: 1667291322}
   - {fileID: 726732671}
   m_Father: {fileID: 3386206757643801668}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1320,7 +1351,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1969579793}
-  - {fileID: 989779010}
+  - {fileID: 758370646}
+  - {fileID: 307716037}
+  - {fileID: 1829662027}
   - {fileID: 2017473140}
   m_Father: {fileID: 188742082}
   m_RootOrder: 0

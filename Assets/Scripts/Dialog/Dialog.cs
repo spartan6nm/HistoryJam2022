@@ -17,28 +17,29 @@ public class Dialog : MonoBehaviour
     [SerializeField]
     private protected float typingSpeed;
 
-    private protected static int indexSentences;
-    private protected static int indexDialogs;
+    public static int indexSentences;
+    public static int indexDialogs;
 
 
 
     public virtual IEnumerator Type()
     {
-        for (int i = 0; i < dialogs[indexDialogs].sentences[indexSentences].ToCharArray().Length; i++)
-        {
-            if (i <= 1)
-            {
-                continueButton.interactable = false;
-            }
-            else if (i >= dialogs[indexDialogs].sentences[indexSentences].ToCharArray().Length - 1)
-            {
-                continueButton.interactable = true;
-            }
-             DialogText.text += dialogs[indexDialogs].sentences[indexSentences].ToCharArray()[i];
-            yield return new WaitForSeconds(typingSpeed);
+        yield return new WaitForSeconds(typingSpeed);
+        //for (int i = 0; i < dialogs[indexDialogs].sentences[indexSentences].ToCharArray().Length; i++)
+        //{
+        //    if (i <= 1)
+        //    {
+        //        continueButton.interactable = false;
+        //    }
+        //    else if (i >= dialogs[indexDialogs].sentences[indexSentences].ToCharArray().Length - 1)
+        //    {
+        //        continueButton.interactable = true;
+        //    }
+        //     DialogText.text += dialogs[indexDialogs].sentences[indexSentences].ToCharArray()[i];
+        //    yield return new WaitForSeconds(typingSpeed);
 
 
-        }
+        //}
     }
 
     public virtual void NextSentence()

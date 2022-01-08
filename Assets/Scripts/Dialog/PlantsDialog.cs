@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartingDialog : Dialog
+public class PlantsDialog : Dialog
 {
-
-    public GameObject ceramicSprite;
-
     private void Start()
     {
-        //Debug.LogError(PlayerPrefs.GetInt("Played"));
         StartCoroutine(Type());
     }
+
     public override IEnumerator Type()
     {
         for (int i = 0; i < dialogs[indexDialogs].sentences[indexSentences].ToCharArray().Length; i++)
@@ -47,7 +44,9 @@ public class StartingDialog : Dialog
             {
                 indexDialogs = 0;
                 indexSentences = 0;
-                SceneManager.LoadScene(2);
+                Manager.plants = true;
+                Inventory.instance.Add(Manager.Instance.ceramic2);
+                SceneManager.LoadScene(4);
             }
             else
             {
@@ -62,10 +61,6 @@ public class StartingDialog : Dialog
         StopCoroutine(Type());
         indexSentences = 0;
         indexDialogs++;
-        if (indexDialogs == 2)
-        {
-            Destroy(ceramicSprite);
-        }
         DialogText.text = "";
         StartCoroutine(Type());
     }

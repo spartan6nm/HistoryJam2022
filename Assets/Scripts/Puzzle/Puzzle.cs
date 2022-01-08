@@ -24,23 +24,27 @@ public class Puzzle : MonoBehaviour {
     void Start()
     {
         CreatePuzzle();
-        //EventBroker.CallPlaySound("puzzle");
+        EventBroker.CallPlaySound("puzzle");
     }
 
     void Update()
     {
-        
+        /*
         if (state == PuzzleState.Solved && Input.GetKeyDown(KeyCode.Space))
         {
             StartShuffle();
         }
-        
+        */
     }
 
     //TODO a restart puzzle button code
     public void StartPuzzle()
     {
-        StartShuffle();
+        if (state == PuzzleState.Solved)
+        {
+            StartShuffle();
+        }
+        
     }
 
     void CreatePuzzle()
@@ -173,5 +177,7 @@ public class Puzzle : MonoBehaviour {
 
         state = PuzzleState.Solved;
         emptyBlock.gameObject.SetActive(true);
+        Manager.puzzle = true;
+        SceneManager.LoadScene("puzzleAccident");
     }
 }

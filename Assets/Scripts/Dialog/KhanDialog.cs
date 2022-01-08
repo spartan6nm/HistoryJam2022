@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartingDialog : Dialog
+public class KhanDialog : Dialog
 {
+    public GameObject masterImage;
+    public GameObject khan1Image;
 
-    public GameObject ceramicSprite;
+
+    public GameObject khan2Image;
 
     private void Start()
     {
-        //Debug.LogError(PlayerPrefs.GetInt("Played"));
         StartCoroutine(Type());
     }
+
     public override IEnumerator Type()
     {
         for (int i = 0; i < dialogs[indexDialogs].sentences[indexSentences].ToCharArray().Length; i++)
@@ -40,6 +43,10 @@ public class StartingDialog : Dialog
             indexSentences++;
             DialogText.text = "";
             StartCoroutine(Type());
+            if (indexDialogs == 2 && indexSentences == 5)
+            {
+                khan2Image.SetActive(true);
+            }
         }
         else
         {
@@ -47,12 +54,21 @@ public class StartingDialog : Dialog
             {
                 indexDialogs = 0;
                 indexSentences = 0;
-                SceneManager.LoadScene(2);
+                Manager.khanTalking = true;
+                SceneManager.LoadScene(5);
             }
             else
             {
-
                 NextDialog();
+                if (indexDialogs == 1 && indexSentences == 0)
+                {
+                    khan1Image.SetActive(true);
+                }
+                else if (indexDialogs == 2 && indexSentences == 0)
+                {
+                    khan1Image.SetActive(false);
+                    masterImage.SetActive(false);
+                }
             }
         }
     }
@@ -62,10 +78,6 @@ public class StartingDialog : Dialog
         StopCoroutine(Type());
         indexSentences = 0;
         indexDialogs++;
-        if (indexDialogs == 2)
-        {
-            Destroy(ceramicSprite);
-        }
         DialogText.text = "";
         StartCoroutine(Type());
     }

@@ -21,10 +21,19 @@ public class UserControl : MonoBehaviour
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, moveSelectionLayers);
 
-            if (hit.collider.gameObject.tag == "Walk")
+            try
             {
-                EventBroker.CallPlayerMove(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+                if (hit.collider.gameObject.tag == "Walk")
+                {
+                    EventBroker.CallPlayerMove(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+                }
             }
+            catch (System.Exception)
+            {
+
+                return;
+            }
+            
             
             
         }

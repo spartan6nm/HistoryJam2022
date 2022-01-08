@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbe7197ac6698d479d7a7fa52dea1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ceramic1: {fileID: 11400000, guid: a9ceafb1bcdf31d4a92ca6770ccc5faa, type: 2}
+  ceramic2: {fileID: 11400000, guid: a76114c315b9fac4d9520c5f438b5daf, type: 2}
   playerQuests: []
 --- !u!114 &6326537255816677431
 MonoBehaviour:
@@ -67,7 +69,7 @@ MonoBehaviour:
     loop: 1
     playOnAwake: 0
     source: {fileID: 0}
-  - name: khan
+  - name: 1
     Clip: {fileID: 8300000, guid: 87994f251757e1c4eb4a70eebd8154ac, type: 3}
     volume: 0.6
     pitch: 1
@@ -75,7 +77,7 @@ MonoBehaviour:
     loop: 1
     playOnAwake: 0
     source: {fileID: 0}
-  - name: setar
+  - name: 4
     Clip: {fileID: 8300000, guid: f563698a67a0ed54ba1a36413cf58191, type: 3}
     volume: 0.6
     pitch: 1
@@ -83,7 +85,7 @@ MonoBehaviour:
     loop: 1
     playOnAwake: 0
     source: {fileID: 0}
-  - name: tar
+  - name: 23
     Clip: {fileID: 8300000, guid: 44ed8599dfe094c458b9268eb4d7e509, type: 3}
     volume: 0.6
     pitch: 1
@@ -93,7 +95,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: treeSound
     Clip: {fileID: 8300000, guid: 3f86952586d96c34eb3ba6b63942a904, type: 3}
-    volume: 0.4
+    volume: 0.5
     pitch: 1
     SpatialBlend: 0
     loop: 1
@@ -129,6 +131,14 @@ MonoBehaviour:
     pitch: 1
     SpatialBlend: 0
     loop: 1
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: dialogue_advance
+    Clip: {fileID: 8300000, guid: b4bce7f7627ea8e469e07158abf8a35d, type: 3}
+    volume: 1
+    pitch: 1
+    SpatialBlend: 0
+    loop: 0
     playOnAwake: 0
     source: {fileID: 0}
 --- !u!114 &6326537255816677429

@@ -24,8 +24,23 @@ EditorBuildSettings:
     path: Assets/Scenes/4.unity
     guid: 34b9771b8cd2f5849825010af286ee02
   - enabled: 1
-    path: Assets/Scripts/Puzzle/PuzzleScene.unity
-    guid: 0c7e168305560424ebc462fcfbba1f88
+    path: Assets/Scenes/Puzzle.unity
+    guid: add3915c90dd98d42834bc344c56e1de
+  - enabled: 1
+    path: Assets/Scenes/Water.unity
+    guid: 094f7eed62c4ab3428e43f0bab81d3dd
+  - enabled: 1
+    path: Assets/Scenes/Plants.unity
+    guid: dd0855083c01ab34f8f11659482b1897
+  - enabled: 1
+    path: Assets/Scenes/Geometry.unity
+    guid: 18fa232a939683248b4577f385a8c627
+  - enabled: 1
+    path: Assets/Scenes/Khan.unity
+    guid: 4455dad30adaa4649a7e5f96a6ec9430
+  - enabled: 1
+    path: Assets/Scenes/puzzleAccident.unity
+    guid: 0a51ebd27b032814b8bcf1f845996d61
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 55257f5434c28584888e95b540ce9239,
       type: 2}

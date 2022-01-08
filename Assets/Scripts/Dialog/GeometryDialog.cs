@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartingDialog : Dialog
+public class GeometryDialog : Dialog
 {
-
-    public GameObject ceramicSprite;
-
     private void Start()
     {
-        //Debug.LogError(PlayerPrefs.GetInt("Played"));
         StartCoroutine(Type());
     }
+
     public override IEnumerator Type()
     {
         for (int i = 0; i < dialogs[indexDialogs].sentences[indexSentences].ToCharArray().Length; i++)
@@ -47,11 +44,11 @@ public class StartingDialog : Dialog
             {
                 indexDialogs = 0;
                 indexSentences = 0;
+                Manager.geometry = true;
                 SceneManager.LoadScene(2);
             }
             else
             {
-
                 NextDialog();
             }
         }
@@ -62,10 +59,6 @@ public class StartingDialog : Dialog
         StopCoroutine(Type());
         indexSentences = 0;
         indexDialogs++;
-        if (indexDialogs == 2)
-        {
-            Destroy(ceramicSprite);
-        }
         DialogText.text = "";
         StartCoroutine(Type());
     }
